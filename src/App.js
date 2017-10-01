@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./App.css";
 import Range from "./components/Range";
 import Output from "./components/Output";

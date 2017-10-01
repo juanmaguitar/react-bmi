@@ -1,6 +1,14 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types'
 
 class Range extends Component {
+  static propTypes = {
+    min: PropTypes.number.required,
+    max: PropTypes.number.required,
+    step: PropTypes.number.required
+  
+  }
+
   state = {
     value: this.props.value
   }
