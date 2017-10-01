@@ -3,20 +3,19 @@ import PropTypes from 'prop-types'
 
 class Range extends Component {
   static propTypes = {
-    min: PropTypes.number.required,
-    max: PropTypes.number.required,
-    step: PropTypes.number.required
-  
-  }
-
-  state = {
-    value: this.props.value
+    min: PropTypes.number.isRequired,
+    max: PropTypes.number.isRequired,
+    step: PropTypes.number.isRequired  
   }
 
   static defaultProps = {
     min: 0,
     max: 245,
     step: 1
+  }
+
+  state = {
+    value: this.props.value
   }
 
   handleChange = ({ target }) => {
